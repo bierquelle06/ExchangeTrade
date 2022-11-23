@@ -28,6 +28,14 @@ The CREATE POST api/controller here should be examined.
 
 
 
+***Integration :***
+
+Integrating to a rate provider to obtain the latest currency exchange rates. https://exchangeratesapi.io/
+
+https://github.com/bierquelle06/ExchangeTrade/tree/main/Plugins/MeDirect.ExchangeRatesApi
+
+
+
 Database :
 
 1. MEDIRECTDB.bak 
