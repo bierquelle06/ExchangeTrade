@@ -6,13 +6,39 @@ Within the project; You will see it under the "Doc" folder.
 The study was carried out in accordance with the monolothotic working principle.
 https://dotnetkonf.az/resources/Architecting-Cloud-Native-NET-Apps-for-Azure.pdf
 
-- Cache the entire application with InMemoryDatabase, use it.
+- Cache the entire application with InMemoryDatabase, use it. (optional)
+
+- SeriLog kullandım. (log için)
+
 - I used QUARTZ. (I matched the foreign currency type of the master account with the foreign currency defined in the system and stored it in the database. (If there is no storage process, it stores it.)
+
 - I added the control process in the last 1 hour.
+
+- When an exchange rate is used it should never be older than 30 minutes
+
+  (I storage to data in DB and also im checking with QUARTZ)
+
+
+
+You can focus to this path.
 
 ...\MeDirect.WebApi\Controllers\v1\BankAccountActivityController.cs
 
 The CREATE POST api/controller here should be examined.
+
+
+
+Database :
+
+1. MEDIRECTDB.bak 
+2. MEDIRECTIDENTITYDB.bak (For Identity)
+
+
+
+API Auth. Information (For Token)
+
+Username : info@medirect.com
+Password : 123Pa$$word!
 
 
 
